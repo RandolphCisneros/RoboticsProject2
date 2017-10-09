@@ -1,21 +1,8 @@
 /*
- *  bumper.cc
- * 
- *  Sample code for a robot that has two front bumpers and uses them to
- *  avoid obstacles. Suitable for use with the Roomba and Create. 
- * 
- *  Works IRL. Doesn't work so well in Stage, probably because of the
- *  crude modeling of the bumpers, and can get stuck in convex shapes
- *  when it backs into an object while trying to turn away from it.
- *
- *  Based on an example provided by Monica Anderson and Jeff Forbes,
- *  via Carlos Jaramillo, and changed to (hopefully) make it easier to
- *  understand.
- *
- *  Modified:    Simon Parsons
- *  Date:        15th June 2009
- *  Last change: 19th September 2011
- *  
+ * Robotics class project #2
+ * Modified version of bumper.cc, which was initially written by Simon Parsons
+ * Used to navigate a Roomba/Create around an unusually shaped object
+ * Group 5: Randolph Cisneros, Arsenii Lyzenko, Peggy Li, Osi Eastman
  */
 
 #include <iostream>
@@ -103,5 +90,3 @@ int main(int argc, char *argv[])
 		pp.SetSpeed(speed, turnrate);  
 	}
 }
-
-
