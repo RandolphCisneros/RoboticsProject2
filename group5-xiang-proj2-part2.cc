@@ -1,5 +1,5 @@
 /*
- * Robotics class project #2
+ * Robotics class project #2, part 2
  * Modified version of bumper.cc, which was initially written by Simon Parsons
  * Used to navigate a Roomba/Create around a maze
  * Group 5: Randolph Cisneros, Arsenii Lyzenko, Peggy Li, Osi Eastman
