@@ -19,12 +19,10 @@ int main(int argc, char *argv[])
 	
 	pp.SetMotorEnable(true);
 	double turnrate, speed;
-	double xPosStart = pp.GetXPos(), yPosStart = pp.GetYPos();
 	bool quad4 = false;
 
-  // Control loop
 	while(!(quad4 && pp.GetYPos() < 1)) 
-    {    
+    	{    
 		robot.Read(); //read robot status
 		if (pp.GetXPos() < 6 && pp.GetYPos() > 6)
 			quad4 = true;
@@ -64,10 +62,10 @@ int main(int argc, char *argv[])
 		
 		//print out information about robot
 		std::cout << "x: " << pp.GetXPos()  << std::endl;
-      	std::cout << "y: " << pp.GetYPos()  << std::endl;
+      		std::cout << "y: " << pp.GetYPos()  << std::endl;
 		std::cout << "a: " << pp.GetYaw()  << std::endl;
-      	std::cout << "Bumpers: " << (bp[0] || bp[1]) << std::endl;
+      		std::cout << "Bumpers: " << (bp[0] || bp[1]) << std::endl;
 		std::cout << "Speed: " << speed << std::endl;      
-      	std::cout << "Turn rate: " << turnrate << std::endl << std::endl;
-    }
+      		std::cout << "Turn rate: " << turnrate << std::endl << std::endl;
+	}
 }
